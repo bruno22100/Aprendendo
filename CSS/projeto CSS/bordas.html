@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- -->
+<html>
+	<head>
+		<title>Bordas, fontes e cores</title>
+		<meta charset="utf-8">
+		<!--Temos duas maneira de personalização, a priemira e mais curta não é tão personalizável e a segunda é possível personalizar tudo por linha da borda -->
+		<style type="text/css">
+			#conteudo{
+
+				/*border: 3px solid red;*/
+				border-color: red green blue black;
+				border-width: 3px 6px 9px 12px;
+				border-style: solid dotted dashed double;
+			} 
+			/*utilizando o código gerado na internet pra personalizar a cor*/
+			/*Definindo prioridades de fontes*/
+			.formatação{
+				color: #035E1D;
+				font-size: 50px;
+				background: #CCEEFF;
+				font-family:"Lucida Console", Monaco, monospace;
+			}
+			.texto{
+				/*
+				px -> tamanho fixo
+				% -> tamanho relativo
+				em -> tamnho relativo ao conteiner pai
+				*/
+				font-size: 3.5em;
+			}
+			div{
+				background: #CCEEFF;
+				font-size: 40px;
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<div id="conteudo">
+			Bordas<br>
+			Bordas<br>
+			Bordas<br>			
+		</div>
+
+		<p class="formatação">
+			Conteúdo
+		</p>
+
+		<div>
+			<p class="texto">
+				Conteúdo 2
+			</p>
+			<p>
+				Conteúdo 3
+			</p>
+		</div>
+
+	</body>
+</html>
